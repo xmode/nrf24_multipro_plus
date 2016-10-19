@@ -1,14 +1,23 @@
 # nrf24-multipro-plus
-nRF24L01 multi-protocol RC transmitter
+nRF24L01 multi-protocol RC transmitter modified to accept new hardware.
 
-Modified to accept new hardware.
+## Setup Procedure
+- Create a model in OpenTX using external module in PPM mode, 12 channels and TAER sequence order.
+- Set the momentary switch to channel 12 (used for reset/rebind)
 
 ## Binding Procedure
-- Create a model in OpenTX using external module in PPM mode, 12 channels and TAER sequence order.
+Do one of the following:
+
 - Turn off Taranis.
 - Power up quad.
 - While holding the appropriate stick pattern listed below, power up Taranis.
 - Arm quad based on it's firmware's specification. 
+
+- Turn on Taranis and allow module to go to the default mode
+- Power up the quad
+- On the module, cycle to the correct model type.
+- Quad should bind automatically when selected.
+- If quad doesnt bind, powercycle the quad and pull the reset switch on the taranis to try and bind again. 
 
 
 #####Protocol is selected with stick position at startup:
@@ -30,7 +39,7 @@ Modified to accept new hardware.
 - Aileron left = Cheerson CX-10 green pcb  
 - Aileron right = Cheerson CX-10 blue pcb & some newer red pcb, CX-10A, CX-10C, CX11, CX12, Floureon FX10, JJRC DHD D1  
 
-Last used protocol is automatically selected if stick is in neutral position.
+Last used protocol is automatically selected if stick is in neutral position. Also note the model type can be changed with the buttons on the module.
 
 #####Extra features (if available on aircraft):
 
