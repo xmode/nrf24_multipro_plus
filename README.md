@@ -6,12 +6,14 @@ nRF24L01 multi-protocol RC transmitter modified to accept new hardware.
 - Set the momentary switch to channel 12 (used for reset/rebind)
 
 ## Binding Procedure
-Do one of the following:
+To setup bind without ising the screen:
 
 - Turn off Taranis.
 - Power up quad.
 - While holding the appropriate stick pattern listed below, power up Taranis.
 - Arm quad based on it's firmware's specification. 
+
+To bind by using the screen:
 
 - Turn on Taranis and allow module to go to the default mode
 - Power up the quad
